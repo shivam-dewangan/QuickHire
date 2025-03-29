@@ -12,7 +12,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://quickhire-0utm.onrender.com/users/login", user);
+      await axios.post("https://quickhire-0utm.onrender.com/api/users/login", user);
       alert("Login Successful!");
       navigate("/home");
     } catch (err) {
