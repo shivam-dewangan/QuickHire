@@ -12,7 +12,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5001/api/users/signup", user);
+      await axios.post("https://quickhire-0utm.onrender.com/users/signup", user);
       alert("Signup Successful!");
       navigate("/");
     } catch (err) {
