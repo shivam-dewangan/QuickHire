@@ -67,7 +67,7 @@ const LabourRegistrationForm = () => {
     });
 
     try {
-      const response = await axios.post("https://quickhire-0utm.onrender.com/labour/register", formDataToSend, {
+      const response = await axios.post("https://quickhire-0utm.onrender.com/api/labour/register", formDataToSend, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       alert("Form Submitted Successfully!");
