@@ -1,0 +1,124 @@
+/* 🌆 Full Page Background */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+.auth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  /* 👤 Login & Signup Backgrounds */
+  .login-bg {
+    background-image: url("../assets/login.png");
+  }
+  
+  .signup-bg {
+    background-image: url("../assets/signup.png");
+  }
+  
+  /* 🏠 Form Container */
+  .auth-form {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 2.5rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* 📌 Title */
+  .auth-form h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* 🔡 Input Fields */
+  .auth-form input {
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    outline: none;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .auth-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* 🔘 Button */
+  .auth-form button {
+    padding: 14px;
+    border: none;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+  }
+  
+  .auth-form button:hover {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  }
+  
+  /* 📢 Signup/Login Link */
+  .auth-form p {
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .auth-form span {
+    color: #ff7eb3;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* 📱 Responsive Fix for Desktop Layout */
+  @media screen and (max-width: 1200px) {
+    .auth-container {
+      flex-direction: column;
+      height: auto;
+      padding: 50px 20px;
+    }
+  
+    .auth-form {
+      max-width: 400px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .auth-form {
+      width: 90%;
+      max-width: 350px;
+      padding: 2rem;
+    }
+  
+    .auth-form h2 {
+      font-size: 1.5rem;
+    }
+  
+    .auth-form input,
+    .auth-form button {
+      font-size: 1rem;
+    }
+  }
+  

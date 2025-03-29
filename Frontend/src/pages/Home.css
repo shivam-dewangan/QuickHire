@@ -1,0 +1,122 @@
+/* Background Image Styling */
+.home-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  text-align: center;
+  overflow: hidden; /* Prevent extra scroll */
+}
+
+.home-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/home.png") no-repeat center center/cover;
+  
+  /* Blur & Dark Effect */
+  filter: blur(4px) brightness(90%);
+  
+  /* Ensure it stays behind the content */
+  z-index: -1;
+}
+
+
+  
+  /* Header Styling */
+  .home-container h2 {
+    color: black;
+
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+
+  }
+  
+  /* Labourers Grid */
+  .labourers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Card Styling */
+  .labourer-card {
+  
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    border-radius: 3rem;
+  }
+  
+  .labourer-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Profile Image */
+  .labourer-card img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid black;
+    margin-bottom: 12px;
+  }
+  
+  /* Labourer Details */
+  .labourer-card h3 {
+    margin: 8px 0;
+    font-size: 1.2rem;
+    color: #222;
+  }
+  
+  .labourer-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Loading Text */
+  .loading-text {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .labourer-image {
+  width: 100px; /* Adjust as needed */
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.hire-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.hire-button:hover {
+  background-color: #0056b3;
+}
