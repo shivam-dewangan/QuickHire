@@ -10,12 +10,14 @@ dotenv.config();
 const app = express();
 
 // ✅ CORS Middleware (Allow Frontend Access)
+
 app.use(cors({
-    origin: "http://localhost:5173", // Allow frontend access
+    origin: ["http://localhost:5173", "https://quickhire-1-77q3.onrender.com"], // Allow frontend access
     methods: "GET,POST,PUT,DELETE",
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true
 }));
+
 
 // ✅ Middleware
 app.use(express.json());
