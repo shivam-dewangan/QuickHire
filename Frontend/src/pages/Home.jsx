@@ -13,7 +13,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchLabourers = async () => {
       try {
-        const response = await fetch("http://localhost:5001/api/labour/all");
+        const response = await fetch("https://quickhire-0utm.onrender.com/labour/all");
         const data = await response.json();
         console.log("Fetched Labourers:", data);
         setLabourers(data);
